@@ -1,6 +1,7 @@
 import java.awt.*;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Scanner;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
@@ -99,12 +100,55 @@ public class Main {
 
         //--------------------- operatores ----------------------
 
-        int x = 15;
-        System.out.println(x + 5);
-        System.out.println(x - 5);
-        System.out.println(x * 5);
-        System.out.println(x / 5);
-        System.out.println(x % 5);
+//        int x = 15;
+//        System.out.println(x + 5);
+//        System.out.println(x - 5);
+//        System.out.println(x * 5);
+//        System.out.println(x / 5);
+//        System.out.println(x % 5);
+
+
+        //--------------------- Casting ----------------------
+        // byte > short > int > long > float > double
+//        short x = 2;
+//        int sum = x+5 ;
+//        System.out.println(sum);
+
+//        double x = 2.1;
+//        int sum = (int) x + 3 ;
+//        System.out.println(sum);
+
+//        String x = "1";
+//        int sum = Integer.parseInt(x) + 3;
+//        System.out.println(sum);
+
+
+
+        //--------------------- MATH ----------------------
+
+//        System.out.println(Math.round(1.8f));
+//        System.out.println(Math.floor(1.8f));
+//        System.out.println(Math.ceil(1.0001f));
+//        System.out.println(Math.min(4,5));
+//        System.out.println(Math.max(4,5));
+//        System.out.println((int) (Math.random()*100));
+
+
+
+        //--------------------- Scanner ----------------------
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Please Enter Your Age : ");
+//        byte Age = scanner.nextByte();
+//        System.out.println("Your age is "+Age);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please Enter Your Name : ");
+        String name = scanner.nextLine().trim();
+        System.out.print("Please Enter Your Age : ");
+        int Age = scanner.nextInt();
+        System.out.println("Your Name is "+name);
+        System.out.println("Your Age is "+Age);
+
 
 
 
