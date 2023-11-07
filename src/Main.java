@@ -141,15 +141,60 @@ public class Main {
 //        byte Age = scanner.nextByte();
 //        System.out.println("Your age is "+Age);
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Please Enter Your Name : ");
-        String name = scanner.nextLine().trim();
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Please Enter Your Name : ");
+//        String name = scanner.nextLine().trim();
+//        System.out.print("Please Enter Your Age : ");
+//        int Age = scanner.nextInt();
+//        System.out.println("Your Name is "+name);
+//        System.out.println("Your Age is "+Age);
+
+
+
+        //--------------------- Comparison Operators ----------------------
+
+//        int x = 1;
+//        int y = 2;
+//
+//        System.out.println(x==y); //boolean
+//        System.out.println(x!=y); //boolean
+//        System.out.println(x>=y); //boolean
+//        System.out.println(x>y); //boolean
+//        System.out.println(x<y); //boolean
+//        System.out.println(x<=y); //boolean
+
+
+        //--------------------- Logical  Operators ----------------------
+
+        // AND : && & All of True
+        //OR : || | NotAll of True
+//        boolean license = true;
+//        int age = 18;
+//        boolean HasCar = false;
+//
+//        boolean canRegister = (license == true) && (age > 18) && (HasCar == false);
+//        System.out.println(canRegister);
+
+//        boolean married = true;
+//        int age = 40;
+//
+//        boolean canGet = married || age>35 ;
+//        System.out.println(canGet);
+
+
+        //--------------------- IF ----------------------
+
+        Scanner input = new Scanner(System.in);
         System.out.print("Please Enter Your Age : ");
-        int Age = scanner.nextInt();
-        System.out.println("Your Name is "+name);
-        System.out.println("Your Age is "+Age);
 
-
+        int age = input.nextInt();
+        if (age<18){
+            System.out.println("You Are Under Age");
+        } else if (age<50) {
+            System.out.println("Wellcom");
+        } else {
+            System.out.println("You Are OverAge");
+        }
 
 
     }
