@@ -184,17 +184,45 @@ public class Main {
 
         //--------------------- IF ----------------------
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("Please Enter Your Age : ");
+//        Scanner input = new Scanner(System.in);
+//        System.out.print("Please Enter Your Age : ");
+//
+//        int age = input.nextInt();
+//        if (age<18){
+//            System.out.println("You Are Under Age");
+//        } else if (age<50) {
+//            System.out.println("Wellcom");
+//        } else {
+//            System.out.println("You Are OverAge");
+//        }
 
-        int age = input.nextInt();
-        if (age<18){
-            System.out.println("You Are Under Age");
-        } else if (age<50) {
-            System.out.println("Wellcom");
-        } else {
-            System.out.println("You Are OverAge");
+
+
+        //--------------------- SWICH ----------------------
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("PLEASE Enter Your position : ");
+        String userLevel = input.next();
+
+        switch (userLevel){
+            case "admin" :
+                System.out.println("You Are Admin");
+                break;
+            case "user" :
+                System.out.println("You Are User");
+                break;
+            default:
+                System.out.println("You Are Guest");
         }
+
+
+//        if (userLevel.equals("admin")){
+//            System.out.println("You Are Admin");
+//        } else if (userLevel.equals("user")) {
+//            System.out.println("You Are User");
+//        }else {
+//            System.out.println("You Are Guest");
+//        }
 
 
     }
