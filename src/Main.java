@@ -198,22 +198,22 @@ public class Main {
 
 
 
-        //--------------------- SWICH ----------------------
+        //--------------------- SWITCH ----------------------
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("PLEASE Enter Your position : ");
-        String userLevel = input.next();
-
-        switch (userLevel){
-            case "admin" :
-                System.out.println("You Are Admin");
-                break;
-            case "user" :
-                System.out.println("You Are User");
-                break;
-            default:
-                System.out.println("You Are Guest");
-        }
+//        Scanner input = new Scanner(System.in);
+//        System.out.print("PLEASE Enter Your position : ");
+//        String userLevel = input.next();
+//
+//        switch (userLevel){
+//            case "admin" :
+//                System.out.println("You Are Admin");
+//                break;
+//            case "user" :
+//                System.out.println("You Are User");
+//                break;
+//            default:
+//                System.out.println("You Are Guest");
+//        }
 
 
 //        if (userLevel.equals("admin")){
@@ -223,6 +223,39 @@ public class Main {
 //        }else {
 //            System.out.println("You Are Guest");
 //        }
+
+
+
+        //--------------------- For ----------------------
+//        Scanner input = new Scanner(System.in);
+//        System.out.print("Please Enter Number Of Repeat : ");
+//        int x = input.nextInt();
+//
+//        for (int i = 0 ; i<x ; i++){
+//            System.out.println("Hello World");
+//        }
+
+
+
+        //--------------------- WHILE ----------------------
+
+//        String input = "";
+//        Scanner scanner = new Scanner(System.in);
+//        while (!input.equals("quit")) {
+//            input = scanner.nextLine().toLowerCase();
+//            System.out.println(input);
+//        }
+
+
+        //--------------------- FOREACH ----------------------
+
+        String[] users = {"kasra","Ali","Reza"};
+        for (String user : users) {
+            System.out.println("user--"+user);
+        }
+
+
+
 
 
     }
